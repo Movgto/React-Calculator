@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="screen"></div>
+      <div className="button-ctnr">
+        <Button isOperator={false}>1</Button>
+        <Button isOperator={false}>2</Button>
+        <Button isOperator={false}>3</Button>
+        <Button isOperator={true}>+</Button>
+      </div>
+      <div className="button-ctnr">
+        <Button isOperator={false}>4</Button>
+        <Button isOperator={false}>5</Button>
+        <Button isOperator={false}>6</Button>
+        <Button isOperator={true}>-</Button>
+      </div>
+      <div className="button-ctnr">
+        <Button isOperator={false}>7</Button>
+        <Button isOperator={false}>8</Button>
+        <Button isOperator={false}>9</Button>
+        <Button isOperator={true}>x</Button>
+      </div>
+      <div className="button-ctnr">
+        <Button isOperator={true}>/</Button>
+        <Button isOperator={true}>=</Button>
+        <Button>C</Button>
+      </div>
     </div>
   );
 }
