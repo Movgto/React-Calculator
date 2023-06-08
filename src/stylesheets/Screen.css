@@ -1,0 +1,18 @@
+#screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    overflow: hidden;
+    width: 80%;
+    min-height: 3rem;
+    max-height: max-content;
+    margin: 0.4rem;
+    background-color: darkolivegreen;
+}
+
+#screen p {
+    word-break: break-all;
+    font-size: max(min(3vw, 1.5rem), 1rem);
+}
